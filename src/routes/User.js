@@ -1,17 +1,19 @@
 import React from 'react';
-import { connect } from 'dva';
+import {connect} from 'dva';
 import styles from './User.css';
+import UserListTable from './UserListTable';
 
-function User() {
-  return (
-    <div className={styles.normal}>
-      Route Component: User
-    </div>
-  );
+
+@connect((state) => {
+  return {...state.user};
+})
+
+export default class UserList extends React.Component {
+  render = () => {
+    return (
+      <div>
+        <UserListTable />
+      </div>
+    );
+  }
 }
-
-function mapStateToProps() {
-  return {};
-}
-
-export default connect(mapStateToProps)(User);
