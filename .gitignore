@@ -11,12 +11,4 @@
 npm-debug.log*
 .editorconfig
 .eslintrc
-.idea/markdown-navigator/
-.idea/misc.xml
-.idea/modules.xml
-.idea/react-dva-antd-pro.iml
-.idea/workspace.xml
-.idea/vcs.xml
-.roadhogrc
-.roadhogrc.mock.js
 .idea/
